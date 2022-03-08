@@ -1,38 +1,394 @@
-.App {
-  text-align: center;
+.container {
+    margin: 0 27px 0px 71px;
+    background: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    display: flex;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerLinks {
+    display: flex;
+    margin-left: 55px;
+    margin-top: 21px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerLink {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+    margin-right: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.headerShortcuts {
+    display: flex;
+    margin-left: 185px;
+    margin-top: 19px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerShortcutIcon {
+    background-color: white;
+    margin-right: 5px;
+}
+
+.logo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 22px;
+}
+
+.contentContainer {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    float: left;
+    width: 25%;
+    background: white;
+    margin-right: 20px;
+}
+
+.right {
+    float: left;
+    width: 25%;
+    background: white;
+    margin-right: 20px;
+}
+
+.main {
+    float: left;
+    width: 40%;
+    background-color: white;
+    margin-right: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.productLinks {
+    display: flex;
+}
+
+.productLink {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    /* identical to box height, or 17px */
+    text-transform: uppercase;
+    /* Dark Grey */
+    color: #767676;
+    margin-right: 25px;
+}
+
+.productLinkActive {
+    color: #000000;
+    font-weight: 700;
+}
+
+.productDetails {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #000000;
+    margin-top: 6px;
+}
+
+.productEditorNoteLink {
+    margin: 10px 0px;
+}
+
+.productDesignerLink {
+    margin: 10px 0px;
+}
+
+.linkDecoration {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.heroImage {
+    position: relative;
+    width: 562px;
+    height: 675px;
+}
+
+.heroImageRow2 {
+    width: 562px;
+    height: 342px;
+    display: flex;
+    margin-top: 8px;
+}
+
+.heroImageRow3 {
+    width: 562px;
+    height: 675px;
+    margin-bottom: 5px;
+}
+
+.image1 {
+    margin-right: 5px;
+    object-fit: fill;
+}
+
+.image2 {
+    object-fit: fill;
+}
+
+.imageFavorite {
+    position: absolute;
+    margin-right: 20px;
+    right: 15px;
+    top: 10px;
+}
+
+.relatedProductLinks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.productName {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 96%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+}
+
+.productSubName {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000000;
+    margin-top: 4px;
+}
+
+.productPrice {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.productColor {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.productAllImages {
+    display: flex;
+}
+
+.productAllImage {
+    width: 51px;
+    height: 63px;
+    border: 1px solid #E5E5E5;
+    margin-right: 5px;
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.productImageActive {
+    border: 1px solid black;
+}
+
+.productSizeContainer {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productSizesAvailable {
+    display: flex;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.productSize {
+    border: 1px solid #E5E5E5;
+    border-radius: 100px;
+    margin-right: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 5px 30px;
+    margin: 6px 6px 6px 0px;
+}
+
+.productSizeUnavailable {
+    color: #A6A6A6 !important;
+    text-decoration: line-through;
+}
+
+.productSizeSelected {
+    color: white !important;
+    background-color: #000000 !important;
+}
+
+.addToBagButton {
+    height: 48px;
+    margin-top: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #000000;
+    border: 0.999053px solid #000000;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productOffers {
+    margin-top: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.productHelpChat {
+    margin-top: 17px;
+}
+
+.editorsNote {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.editorsNoteDescription {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    color: #000000;
+}
+
+.editorSignature {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #000000;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+
+.footerContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageScrollContainer {
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+    .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .main {
+        display: none;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .headerLinks {
+        display: none;
+    }
+
+    .container {
+        margin: 0px;
+    }
+
+    .logo {
+        margin: 18px 0px 22px 18px;
+    }
+
+    .headerShortcuts {
+        margin: 18px 0px;
+    }
+    
+    .header {
+        justify-content: space-between;
+    }
+
+    .contentContainer {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .hideDesktop {
+        display: none;
+    }
 }
