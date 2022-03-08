@@ -22,6 +22,7 @@
     text-transform: uppercase;
     color: #000000;
     margin-right: 16px;
+    cursor: pointer;
 }
 
 .headerShortcuts {
@@ -33,6 +34,7 @@
 .headerShortcutIcon {
     background-color: white;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .logo {
@@ -45,6 +47,7 @@
     color: #000000;
     margin-top: 25px;
     margin-bottom: 22px;
+    cursor: pointer;
 }
 
 .contentContainer {
@@ -93,6 +96,7 @@
     /* Dark Grey */
     color: #767676;
     margin-right: 25px;
+    cursor: pointer;
 }
 
 .productLinkActive {
@@ -213,6 +217,11 @@
     height: 63px;
     border: 1px solid #E5E5E5;
     margin-right: 5px;
+    cursor: pointer;
+}
+
+.productAllImage:hover {
+    border: 1px solid black;
 }
 
 .productImage {
@@ -250,6 +259,11 @@
     color: #000000;
     padding: 5px 30px;
     margin: 6px 6px 6px 0px;
+    cursor: pointer;
+}
+
+.productSize:hover {
+    border: 1px solid black;
 }
 
 .productSizeUnavailable {
@@ -279,6 +293,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .productOffers {
